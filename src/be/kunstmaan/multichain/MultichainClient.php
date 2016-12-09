@@ -113,9 +113,9 @@ class MultichainClient
      * @param string $account
      * @return mixed
      */
-    public function getNewAddress($account = '')
+    public function getNewAddress()
     {
-        return $this->jsonRPCClient->execute("getnewaddress", array($account));
+        return $this->jsonRPCClient->execute("getnewaddress", []);
     }
 
     /**
